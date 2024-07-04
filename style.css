@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  color: white;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(218, 23%, 16%);
+}
+
+.card_wrapper {
+  margin-top: 5rem;
+  background-color: hsl(217, 19%, 24%);
+  width: 350px;
+  height: fit-content;
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  position: relative;
+
+  p:first-of-type {
+    font-size: 0.75rem;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 2px;
+  }
+
+  p.advice_text {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .button_wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    margin-left: 0 auto;
+    bottom: -25px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    &&:hover {
+      box-shadow: 0 0 5px hsl(150, 100%, 66%), 0 0 25px hsl(150, 100%, 66%),
+        0 0 50px hsl(150, 100%, 66%), 0 0 200px hsl(150, 100%, 66%);
+      cursor: pointer;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
